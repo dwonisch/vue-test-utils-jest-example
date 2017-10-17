@@ -16,9 +16,12 @@ export default {
     msg: null
   }),
   methods: {
-    toggleMessage () {
+    toggleMessage() {
       this.msg = this.msg === 'message' ? 'toggled message' : 'message'
     }
+  },
+  mounted: () => {
+    console.log(this.$el)
   },
   components: {
     Message
